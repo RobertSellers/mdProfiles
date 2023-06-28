@@ -1,9 +1,9 @@
 {
-  "identifier": "project",
+  "identifier": "raster",
   "namespace": "org.adiwg.profile",
-  "alternateId": ["project"],
-  "title": "Project",
-  "description": "Document a project",
+  "alternateId": ["raster"],
+  "title": "raster",
+  "description": "Document a raster file",
   "version": "VERSION",
   "components": {
     "record": {

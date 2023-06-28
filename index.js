@@ -510,12 +510,12 @@ var basic = {
   }
 };
 
-var project = {
-  identifier: 'project',
+var raster = {
+  identifier: 'raster',
   namespace: 'org.adiwg.profile',
-  alternateId: ['project'],
-  title: 'Project',
-  description: 'Document a project',
+  alternateId: ['raster'],
+  title: 'raster',
+  description: 'Document a raster',
   version: '0.2.4',
   components: {
     record: {

@@ -508,12 +508,12 @@ var basic = {
   }
 };
 
-var project = {
-  identifier: 'project',
+var raster = {
+  identifier: 'raster',
   namespace: 'org.adiwg.profile',
-  alternateId: ['project'],
-  title: 'Project',
-  description: 'Document a project',
+  alternateId: ['raster'],
+  title: 'raster',
+  description: 'Document a raster',
   version: '0.2.4',
   components: {
     record: {
@@ -1243,9 +1243,9 @@ var pkg = {
 const version = pkg.version;
 
 function asArray() {
-  return [full, basic, project, product];
+  return [full, basic, raster, product];
 }
 
-var main = { full, basic, project, product, schema, asArray, version };
+var main = { full, basic, raster, product, schema, asArray, version };
 
 export default main;

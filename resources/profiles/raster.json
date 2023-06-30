@@ -8,44 +8,154 @@
   "components": {
     "record": {
       "main": {
+        "resourceType":{
+          "resourceType":false,
+          "name": false
+        },
+        "pointOfContact":false,
         "basicInformation": {
           "recordId": false
         },
+        "defaultLocale": {
+          "country": false
+        },
         "citation": {
           "basicInformation": {
+            "alternateTitle": false,
+            "dates": {
+              "dateItem": {
+                "date": false,
+                "dateType": false,
+                "description": false
+              }
+            },
             "edition": false,
             "presentationForm": false
           },
+          "responsibleParty": {
+            "role": false,
+            "contacts": false
+          },
           "onlineResource": {
+            "name": false,
+            "url": false,
             "protocol": false,
+            "description": false,
+            "onlineFunction": false,
             "applicationProfile": false,
             "protocolRequest": false
           },
           "identifier": {
+            "identifier": false,
+            "namespace": false,
             "version": false,
             "description": false,
             "authority": {
               "basicInformation": {
-                "alternateTitle": false
+                "title": false,
+                "alternateTitle": false,
+                "date": false,
+                "dateArray": {
+                  "date": false,
+                  "dateType": false,
+                  "description": false
+                }
+              },
+              "responsibleParty": {
+                "role": false,
+                "contacts": false
               },
               "onlineResource": {
+                "name": false,
+                "url": false,
                 "protocol": false,
+                "description": false,
+                "onlineFunction": false,
                 "applicationProfile": false,
                 "protocolRequest": false
               },
-              "identifier": false
+              "identifier": false,
+              "identifierSimple": {
+                "identifier": false,
+                "namespace": false,
+                "version": false,
+                "description": false
+              },
+              "identifierShort": {
+                "identifier": false,
+                "namespace": false,
+                "version": false,
+                "description": false
+              }
             }
           },
+          "identifierSimple": {
+            "identifier": false,
+            "namespace": false,
+            "version": false,
+            "description": false,
+            "authority": {
+              "basicInformation": {
+                "title": false,
+                "alternateTitle": false,
+                "date": false,
+                "dateArray": false
+              },
+              "responsibleParty": false,
+              "onlineResource": false,
+              "identifier": false,
+              "identifierSimple": false,
+              "identifierShort": false
+            }
+          },
+          "identifierShort": false,
+          "series": {
+            "name": false,
+            "issue": false,
+            "page": false
+          },
           "otherCitationDetails": false,
-          "graphic": false
+          "graphic": {
+            "fileName": false,
+            "fileType": false,
+            "fileDescription": false,
+            "onlineResource": {
+              "name": false,
+              "url": false,
+              "protocol": false,
+              "description": false,
+              "onlineFunction": false,
+              "applicationProfile": false,
+              "protocolRequest": false
+            }
+          }
         },
+        "description": {
+          "abstract": false,
+          "shortAbstract": false
+        },
+        "purpose": false,
+        "supplementalInfo": false,
         "environmentDescription": false,
         "timePeriod": {
+          "dateRange": {
+            "fiscalyear": false
+          },
           "identifier": false,
           "description": false,
           "periodName": false,
-          "interval": false,
-          "duration": false
+          "interval": {
+            "intervalAmount": false,
+            "units": false
+          },
+          "duration": {
+            "years": false,
+            "months": false,
+            "days": false,
+            "hours": false,
+            "minutes": false,
+            "seconds": false
+          }
         },
         "maintenance": false,
         "graphicOverview": false,
@@ -57,9 +167,7 @@
           "containsData": false
         }
       }
-    },
-    "contact": {},
-    "dictionary": {}
+    }
   },
   "nav": {
     "record": [
@@ -67,6 +175,11 @@
         "title": "Main",
         "target": "record.show.edit.main",
         "tip": "Basic information about the project."
+      },
+      {
+        "title": "Metadata",
+        "target": "record.show.edit.metadata",
+        "tip": "Information about the metadata for the resource."
       },
       {
         "title": "Extent",

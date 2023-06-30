@@ -115,10 +115,6 @@ var raster = {
   components: {
     record: {
       main: {
-        resourceType:{
-          resourceType:false,
-          name: false
-        },
         pointOfContact:false,
         basicInformation: {
           recordId: false
@@ -236,10 +232,6 @@ var raster = {
               protocolRequest: false
             }
           }
-        },
-        description: {
-          abstract: false,
-          shortAbstract: false
         },
         purpose: false,
         supplementalInfo: false,

@@ -321,35 +321,9 @@ var raster = {
         tip: 'Information about the metadata for the project.'
       },
       {
-        title: 'Keywords',
-        target: 'record.show.edit.keywords',
-        tip: 'Terms used to describe the project.'
-      },
-      {
         title: 'Extent',
         target: 'record.show.edit.extent',
         tip: 'Information describing the bounds of the project.'
-      },
-      {
-        title: 'Taxonomy',
-        target: 'record.show.edit.taxonomy',
-        tip: 'Information on the taxa associated with the project.'
-      },
-      {
-        title: 'Associated',
-        target: 'record.show.edit.associated',
-        tip: 'Other resources with a defined relationship to the project.'
-      },
-      {
-        title: 'Documents',
-        target: 'record.show.edit.documents',
-        tip: 'Other documents related to, but not defining, the project.'
-      },
-      {
-        title: 'Funding',
-        target: 'record.show.edit.funding',
-        tip:
-          'Information about funding allocated to development of the project.'
       }
     ]
   }
